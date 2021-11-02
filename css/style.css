@@ -52,10 +52,16 @@ nav ul li a:hover{
     background: url("../img/banner.jpg") no-repeat 50% 50%;
     background-size: cover;
     border-radius: 10px;
-    /* filter: brightness(90%); */
     position: relative;
 }
 
+.trasparenza{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(30 30 30 / 20%);
+    border-radius: 10px;   
+}
 /* uso la width con % perché il suo contenitore a una larghezza fissa */
 .contenuto-immagine{
     width: 50%;
@@ -76,56 +82,37 @@ nav ul li a:hover{
 .titolo-main h1{
     font-weight: 800;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 main{
     margin-bottom: 20px;
 }
-
-
-
-
 /*creo un contenitore row per permettere di aggiungere gli elementi flottanti al suo interno*/
 .row::after{
     content: "";
     display: table;
     clear: both;
 }
-
 .lf{
     float: left;
 }
-
-
 .item-1{
     width: 25%;
 }
 
 .item-2{
     width: 50%;
-    padding: 0 20px;
+    padding: 0 20px; 
 }
 
 .item-3{
     width: 25%;
 }
+.contenuto-item-1, .contenuto-item-2, .contenuto-item-3{
+    position: relative;
+}
 
-/* .trasparenza{
-    width: 100%;
-    height: 100%;
-    background:lightgrey;
-    z-index: 2;
-} */
+.sottotitolo{
+    margin: 20px 0;
+}
 
 .contenuto-item-1 img{
     width: 100%;
@@ -134,12 +121,12 @@ main{
 
 .contenuto-item-2 img{
     width: 100%;
-    height: 300px;
+    height: 300px; 
 }
 
 .contenuto-item-3 img{
     width: 100%;
-    height: 300px;
+    height: 300px; 
 }
 
 footer{
