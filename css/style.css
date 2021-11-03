@@ -75,20 +75,18 @@ nav ul li a:hover{
     z-index: 2;
 }
 
-.titolo-main{
+.titolo{
     margin: 20px 0;
 }
 
-.titolo-main p{
+.titolo p{
     color: rgb(158, 168, 179);
 }
 
-.titolo-main h1{
+.titolo h1{
     font-weight: 800;
 }
-main{
-    margin-bottom: 20px;
-}
+
 /*creo un contenitore row per permettere di aggiungere gli elementi flottanti al suo interno*/
 .row::after{
     content: "";
@@ -110,27 +108,24 @@ main{
 .item-3{
     width: 25%;
 }
-.contenuto-item-1, .contenuto-item-2, .contenuto-item-3{
+.content-img{
+    height: 200px;
+    background-size: cover;
+    background-position: center;
     position: relative;
 }
 
+.content-img-1{
+    background-image: url("../img/img-1.jpg");
+}
+.content-img-2{
+    background-image: url("../img/banner-2.jpg");
+}
+.content-img-3{
+    background-image: url("../img/img-3.jpg");
+}
 .sottotitolo{
     margin: 20px 0;
-}
-
-.contenuto-item-1 img{
-    width: 100%;
-    height: 300px;
-}
-
-.contenuto-item-2 img{
-    width: 100%;
-    height: 300px; 
-}
-
-.contenuto-item-3 img{
-    width: 100%;
-    height: 300px; 
 }
 
 footer{
@@ -142,3 +137,10 @@ footer{
 #cuore{
     color: red;
 }
+
+
+
+
+
+
+
